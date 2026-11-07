@@ -4,9 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#061008">
+
 <title>GreenScape | Nature Photography</title>
+
 <meta name="description" content="Discover the beauty of nature through GreenScape by Shahriar Ahsan Samy.">
+
 <meta name="google-site-verification" content="uOqGP7ETZB_D8IT_ed-zaPVyfs4OsnUCELp2U5qM3cA">
+
 <link rel="preconnect" href="https://images.unsplash.com">
 
 <style>
@@ -19,9 +23,16 @@
   --muted:#b7c5b7;
 }
 
-* {margin:0;padding:0;box-sizing:border-box;}
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-html {scroll-behavior:smooth;}
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:100px;
+}
 
 body {
   background:var(--bg);
@@ -30,13 +41,18 @@ body {
   line-height:1.6;
 }
 
-a {color:inherit;text-decoration:none;}
+a {
+  color:inherit;
+  text-decoration:none;
+}
 
 .container {
   width:92%;
   max-width:1200px;
   margin:auto;
 }
+
+/* HEADER */
 
 header {
   background:#050d07;
@@ -60,7 +76,9 @@ header {
   letter-spacing:-1px;
 }
 
-.logo span {color:var(--green);}
+.logo span {
+  color:var(--green);
+}
 
 .nav-links {
   display:flex;
@@ -74,7 +92,9 @@ header {
   font-weight:bold;
 }
 
-.nav-links a:hover {color:var(--green);}
+.nav-links a:hover {
+  color:var(--green);
+}
 
 /* HERO */
 
@@ -90,7 +110,9 @@ header {
   padding:70px 0;
 }
 
-.hero-content {max-width:650px;}
+.hero-content {
+  max-width:650px;
+}
 
 .hero-small {
   color:var(--light);
@@ -106,7 +128,9 @@ header {
   letter-spacing:-2px;
 }
 
-.hero h1 span {color:var(--green);}
+.hero h1 span {
+  color:var(--green);
+}
 
 .hero p {
   color:#e0e9de;
@@ -131,7 +155,9 @@ header {
 
 /* SECTIONS */
 
-section {padding:55px 0;}
+section {
+  padding:55px 0;
+}
 
 .section-title {
   text-align:center;
@@ -157,55 +183,11 @@ section {padding:55px 0;}
   margin-top:8px;
 }
 
-/* TWO MAIN PARTS */
-
-.part-grid {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:22px;
-}
-
-.part-card {
-  min-height:230px;
-  border:1px solid #75e00066;
-  border-radius:15px;
-  overflow:hidden;
-  position:relative;
-  display:flex;
-  align-items:flex-end;
-  padding:25px;
-  background-size:cover;
-  background-position:center;
-}
-
-.part-card:first-child {
-  background-image:
-  linear-gradient(0deg,#000e,transparent),
-  url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85");
-}
-
-.part-card:last-child {
-  background-image:
-  linear-gradient(0deg,#000e,transparent),
-  url("https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=85");
-}
-
-.part-card h3 {
-  font-family:Georgia,serif;
-  font-size:27px;
-  color:var(--light);
-}
-
-.part-card p {
-  color:#e2eadd;
-  font-size:13px;
-}
-
-.part-card:hover {border-color:var(--green);}
-
 /* GALLERIES */
 
-.gallery-section {background:#09150c;}
+.gallery-section {
+  background:#09150c;
+}
 
 .filter-buttons {
   display:flex;
@@ -253,7 +235,9 @@ section {padding:55px 0;}
   transition:.4s;
 }
 
-.photo-card:hover img {transform:scale(1.04);}
+.photo-card:hover img {
+  transform:scale(1.04);
+}
 
 .photo-card h3 {
   font-size:15px;
@@ -266,7 +250,9 @@ section {padding:55px 0;}
   padding:0 13px 12px;
 }
 
-.photo-card.hide {display:none;}
+.photo-card.hide {
+  display:none;
+}
 
 .empty-message {
   text-align:center;
@@ -307,7 +293,9 @@ section {padding:55px 0;}
   cursor:pointer;
 }
 
-.file-input {display:none;}
+.file-input {
+  display:none;
+}
 
 .upload-note {
   margin-top:12px;
@@ -326,7 +314,9 @@ section {padding:55px 0;}
   border-top:1px solid #75e00055;
 }
 
-.about-column {min-width:0;}
+.about-column {
+  min-width:0;
+}
 
 .about-column + .about-column {
   border-left:1px solid #75e00044;
@@ -356,7 +346,9 @@ section {padding:55px 0;}
   background:#142a18;
 }
 
-.about-copy strong {font-size:16px;}
+.about-copy strong {
+  font-size:16px;
+}
 
 .about-copy p {
   color:#c5d2c2;
@@ -365,7 +357,9 @@ section {padding:55px 0;}
   margin-top:7px;
 }
 
-.creator-name {color:var(--light)!important;}
+.creator-name {
+  color:var(--light)!important;
+}
 
 /* SOCIAL */
 
@@ -388,9 +382,18 @@ section {padding:55px 0;}
   color:white;
 }
 
-.youtube {background:#e60018;}
-.tiktok {background:#171717;border:1px solid #777;}
-.facebook {background:#1877f2;}
+.youtube {
+  background:#e60018;
+}
+
+.tiktok {
+  background:#171717;
+  border:1px solid #777;
+}
+
+.facebook {
+  background:#1877f2;
+}
 
 .social-note {
   font-family:Georgia,serif;
@@ -399,7 +402,9 @@ section {padding:55px 0;}
   color:#dcebd8;
 }
 
-.social-note span {color:var(--green);}
+.social-note span {
+  color:var(--green);
+}
 
 /* FOOTER */
 
@@ -412,7 +417,9 @@ section {padding:55px 0;}
   border-top:1px solid #ffffff12;
 }
 
-.bottom-footer strong {color:var(--light);}
+.bottom-footer strong {
+  color:var(--light);
+}
 
 /* LIGHTBOX */
 
@@ -427,7 +434,9 @@ section {padding:55px 0;}
   padding:20px;
 }
 
-.lightbox.open {display:flex;}
+.lightbox.open {
+  display:flex;
+}
 
 .lightbox img {
   max-width:95%;
@@ -463,8 +472,13 @@ section {padding:55px 0;}
     flex-wrap:wrap;
   }
 
-  .gallery-grid {grid-template-columns:repeat(2,1fr);}
-  .about-footer {grid-template-columns:1fr;}
+  .gallery-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .about-footer {
+    grid-template-columns:1fr;
+  }
 
   .about-column + .about-column {
     border-left:0;
@@ -474,23 +488,48 @@ section {padding:55px 0;}
 }
 
 @media(max-width:480px) {
-  .hero {min-height:350px;padding:45px 0;}
-  .hero h1 {font-size:48px;}
+  .hero {
+    min-height:350px;
+    padding:45px 0;
+  }
 
-  .nav-links {gap:10px;}
-  .nav-links a {font-size:11px;}
+  .hero h1 {
+    font-size:48px;
+  }
 
-  .part-grid {grid-template-columns:1fr;}
-  .part-card {min-height:180px;}
+  .nav-links {
+    gap:10px;
+  }
 
-  .gallery-grid {gap:10px;}
-  .photo-card img {height:145px;}
-  .photo-card h3 {font-size:13px;}
+  .nav-links a {
+    font-size:11px;
+  }
 
-  .about-inner {align-items:flex-start;gap:12px;}
-  .profile-photo {width:90px;height:90px;}
+  .gallery-grid {
+    gap:10px;
+  }
 
-  .section-title h2 {font-size:28px;}
+  .photo-card img {
+    height:145px;
+  }
+
+  .photo-card h3 {
+    font-size:13px;
+  }
+
+  .about-inner {
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  .profile-photo {
+    width:90px;
+    height:90px;
+  }
+
+  .section-title h2 {
+    font-size:28px;
+  }
 }
 </style>
 </head>
@@ -499,7 +538,10 @@ section {padding:55px 0;}
 
 <header>
   <div class="container navbar">
-    <a href="#home" class="logo">Green<span>Scape</span></a>
+
+    <a href="#home" class="logo">
+      Green<span>Scape</span>
+    </a>
 
     <nav class="nav-links">
       <a href="#home">Home</a>
@@ -508,6 +550,7 @@ section {padding:55px 0;}
       <a href="#about">About Me</a>
       <a href="#contact">Contact</a>
     </nav>
+
   </div>
 </header>
 
@@ -517,42 +560,22 @@ section {padding:55px 0;}
 
 <section class="hero" id="home">
   <div class="container hero-content">
+
     <div class="hero-small">Welcome to</div>
+
     <h1>Green<span>Scape</span></h1>
+
     <p>Discover the Beauty of Nature</p>
+
     <p class="creator">
       A Nature Photography Gallery by
       <strong>Shahriar Ahsan Samy</strong>
     </p>
-    <a href="#world" class="hero-button">Explore Nature →</a>
-  </div>
-</section>
 
-<!-- TWO PARTS -->
+    <a href="#world" class="hero-button">
+      Explore Nature →
+    </a>
 
-<section>
-  <div class="container">
-    <div class="section-title">
-      <small>EXPLORE GREENSCAPE</small>
-      <h2>Two Worlds of Nature</h2>
-      <p>Explore nature from around the world and through my camera.</p>
-    </div>
-
-    <div class="part-grid">
-      <a href="#world" class="part-card">
-        <div>
-          <h3>🌍 World Nature</h3>
-          <p>Beautiful nature photographs from around the world.</p>
-        </div>
-      </a>
-
-      <a href="#myphotos" class="part-card">
-        <div>
-          <h3>📸 My Photography</h3>
-          <p>Nature moments captured by my own camera.</p>
-        </div>
-      </a>
-    </div>
   </div>
 </section>
 
@@ -617,12 +640,16 @@ section {padding:55px 0;}
 
     </div>
 
-    <p class="empty-message" id="worldEmpty">No photos in this category yet.</p>
+    <p class="empty-message" id="worldEmpty">
+      No photos in this category yet.
+    </p>
 
     <div class="upload-area">
       <h3>🌍 Add World Nature Photos</h3>
       <p>Download permitted photos and upload them to your GitHub repository inside images/world/.</p>
-      <p class="upload-note">Remember to include the photographer or source credit where required.</p>
+      <p class="upload-note">
+        Remember to include the photographer or source credit where required.
+      </p>
     </div>
 
   </div>
@@ -688,9 +715,11 @@ section {padding:55px 0;}
 <section class="about-footer" id="about">
 
   <div class="about-column">
+
     <h2 class="about-title">♟ About Me</h2>
 
     <div class="about-inner">
+
       <img
         class="profile-photo"
         src="images/my-photo.jpg"
@@ -698,6 +727,7 @@ section {padding:55px 0;}
       >
 
       <div class="about-copy">
+
         <strong>Shahriar Ahsan Samy ♥</strong>
 
         <p>
@@ -707,12 +737,16 @@ section {padding:55px 0;}
           ছোট্ট একটি প্রচেষ্টা থেকেই GreenScape-এর যাত্রা।
         </p>
 
-        <p class="creator-name">— GreenScape-এর নির্মাতা</p>
+        <p class="creator-name">
+          — GreenScape-এর নির্মাতা
+        </p>
+
       </div>
     </div>
   </div>
 
   <div class="about-column" id="contact">
+
     <h2 class="about-title">● Follow Me On</h2>
 
     <div class="social-row">
@@ -724,6 +758,7 @@ section {padding:55px 0;}
     <p class="social-note">
       Let's Explore Nature Together <span>♥</span>
     </p>
+
   </div>
 
 </section>
@@ -745,6 +780,7 @@ section {padding:55px 0;}
 // SEPARATE GALLERY FILTERS
 
 function setupFilters(filterAreaId, galleryId, emptyId) {
+
   const buttons = document.querySelectorAll(
     "#" + filterAreaId + " button"
   );
@@ -756,9 +792,11 @@ function setupFilters(filterAreaId, galleryId, emptyId) {
   const empty = document.getElementById(emptyId);
 
   function filter(category) {
+
     let visible = 0;
 
     cards.forEach(card => {
+
       const show =
         category === "All" ||
         card.dataset.category === category;
@@ -769,21 +807,26 @@ function setupFilters(filterAreaId, galleryId, emptyId) {
     });
 
     buttons.forEach(button => {
+
       button.classList.toggle(
         "active",
         button.dataset.filter === category
       );
+
     });
 
     if (empty) {
-      empty.style.display = visible === 0 ? "block" : "none";
+      empty.style.display =
+        visible === 0 ? "block" : "none";
     }
   }
 
   buttons.forEach(button => {
+
     button.addEventListener("click", () => {
       filter(button.dataset.filter);
     });
+
   });
 }
 
@@ -793,10 +836,12 @@ setupFilters("myFilters", "myGrid", "myEmpty");
 // MY PHOTO TEMPORARY PREVIEW
 
 document.getElementById("myPhotoInput").addEventListener("change", event => {
+
   const files = Array.from(event.target.files);
   const grid = document.getElementById("myGrid");
 
   files.forEach(file => {
+
     if (!file.type.startsWith("image/")) return;
 
     const imageURL = URL.createObjectURL(file);
@@ -816,6 +861,7 @@ document.getElementById("myPhotoInput").addEventListener("change", event => {
     label.textContent = "My Photography · Local Preview";
 
     card.append(img, title, label);
+
     grid.prepend(card);
   });
 
@@ -823,6 +869,7 @@ document.getElementById("myPhotoInput").addEventListener("change", event => {
     grid.querySelectorAll(".photo-card").length ? "none" : "block";
 
   event.target.value = "";
+
 });
 
 // LIGHTBOX FOR BOTH GALLERIES
@@ -831,13 +878,16 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightboxImage");
 
 document.body.addEventListener("click", event => {
+
   if (
     event.target.tagName === "IMG" &&
     event.target.closest(".gallery-grid")
   ) {
+
     lightboxImage.src = event.target.src;
     lightbox.classList.add("open");
   }
+
 });
 
 function closeLightbox() {
@@ -851,11 +901,19 @@ document.getElementById("closeLightbox").addEventListener(
 );
 
 lightbox.addEventListener("click", event => {
-  if (event.target === lightbox) closeLightbox();
+
+  if (event.target === lightbox) {
+    closeLightbox();
+  }
+
 });
 
 document.addEventListener("keydown", event => {
-  if (event.key === "Escape") closeLightbox();
+
+  if (event.key === "Escape") {
+    closeLightbox();
+  }
+
 });
 
 </script>
