@@ -901,20 +901,11 @@ filterButtons.forEach(button => {
 });
 
 // CATEGORY CLICK
-
 categoryCards.forEach(card => {
-
   card.addEventListener("click", () => {
-
     filterGallery(card.dataset.category);
-
-    document.getElementById("gallery").scrollIntoView({
-      behavior:"smooth"
-    });
-
   });
-
-});
+});;
 
 // LIGHTBOX
 
