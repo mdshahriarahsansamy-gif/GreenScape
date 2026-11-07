@@ -4,13 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#061008">
-
 <title>GreenScape | Nature Photography</title>
-
 <meta name="description" content="Discover the beauty of nature through GreenScape by Shahriar Ahsan Samy.">
-
 <meta name="google-site-verification" content="uOqGP7ETZB_D8IT_ed-zaPVyfs4OsnUCELp2U5qM3cA">
-
 <link rel="preconnect" href="https://images.unsplash.com">
 
 <style>
@@ -23,15 +19,9 @@
   --muted:#b7c5b7;
 }
 
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+* {margin:0;padding:0;box-sizing:border-box;}
 
-html {
-  scroll-behavior:smooth;
-}
+html {scroll-behavior:smooth;}
 
 body {
   background:var(--bg);
@@ -40,18 +30,13 @@ body {
   line-height:1.6;
 }
 
-a {
-  color:inherit;
-  text-decoration:none;
-}
+a {color:inherit;text-decoration:none;}
 
 .container {
   width:92%;
   max-width:1200px;
   margin:auto;
 }
-
-/* HEADER */
 
 header {
   background:#050d07;
@@ -75,26 +60,21 @@ header {
   letter-spacing:-1px;
 }
 
-.logo span {
-  color:var(--green);
-}
+.logo span {color:var(--green);}
 
 .nav-links {
   display:flex;
   align-items:center;
-  gap:22px;
+  gap:20px;
 }
 
 .nav-links a {
   color:#dce8da;
   font-size:13px;
   font-weight:bold;
-  transition:.3s;
 }
 
-.nav-links a:hover {
-  color:var(--green);
-}
+.nav-links a:hover {color:var(--green);}
 
 /* HERO */
 
@@ -110,9 +90,7 @@ header {
   padding:70px 0;
 }
 
-.hero-content {
-  max-width:650px;
-}
+.hero-content {max-width:650px;}
 
 .hero-small {
   color:var(--light);
@@ -128,14 +106,11 @@ header {
   letter-spacing:-2px;
 }
 
-.hero h1 span {
-  color:var(--green);
-}
+.hero h1 span {color:var(--green);}
 
 .hero p {
   color:#e0e9de;
   font-size:17px;
-  margin-bottom:10px;
 }
 
 .hero .creator {
@@ -152,19 +127,11 @@ header {
   padding:12px 25px;
   border-radius:30px;
   font-weight:bold;
-  transition:.3s;
 }
 
-.hero-button:hover {
-  background:var(--light);
-  transform:translateY(-3px);
-}
+/* SECTIONS */
 
-/* SECTION */
-
-section {
-  padding:55px 0;
-}
+section {padding:55px 0;}
 
 .section-title {
   text-align:center;
@@ -190,55 +157,55 @@ section {
   margin-top:8px;
 }
 
-/* CATEGORIES */
+/* TWO MAIN PARTS */
 
-.category-grid {
+.part-grid {
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
 }
 
-.category {
-  height:180px;
-  position:relative;
-  overflow:hidden;
-  border-radius:13px;
-  cursor:pointer;
+.part-card {
+  min-height:230px;
   border:1px solid #75e00066;
-  background:#102516;
+  border-radius:15px;
+  overflow:hidden;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:25px;
+  background-size:cover;
+  background-position:center;
 }
 
-.category img {
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:.4s;
+.part-card:first-child {
+  background-image:
+  linear-gradient(0deg,#000e,transparent),
+  url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85");
 }
 
-.category:hover img {
-  transform:scale(1.08);
+.part-card:last-child {
+  background-image:
+  linear-gradient(0deg,#000e,transparent),
+  url("https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=85");
 }
 
-.category::after {
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(transparent,#000c);
+.part-card h3 {
+  font-family:Georgia,serif;
+  font-size:27px;
+  color:var(--light);
 }
 
-.category h3 {
-  position:absolute;
-  bottom:15px;
-  left:18px;
-  z-index:2;
-  font-size:20px;
+.part-card p {
+  color:#e2eadd;
+  font-size:13px;
 }
 
-/* GALLERY */
+.part-card:hover {border-color:var(--green);}
 
-.gallery-section {
-  background:#09150c;
-}
+/* GALLERIES */
+
+.gallery-section {background:#09150c;}
 
 .filter-buttons {
   display:flex;
@@ -256,11 +223,10 @@ section {
   color:white;
   cursor:pointer;
   font-weight:bold;
-  transition:.3s;
 }
 
-.filter-buttons button:hover,
-.filter-buttons button.active {
+.filter-buttons button.active,
+.filter-buttons button:hover {
   background:var(--green);
   color:#071006;
 }
@@ -287,9 +253,7 @@ section {
   transition:.4s;
 }
 
-.photo-card:hover img {
-  transform:scale(1.04);
-}
+.photo-card:hover img {transform:scale(1.04);}
 
 .photo-card h3 {
   font-size:15px;
@@ -302,11 +266,16 @@ section {
   padding:0 13px 12px;
 }
 
-.photo-card.hide {
+.photo-card.hide {display:none;}
+
+.empty-message {
+  text-align:center;
+  color:var(--muted);
+  padding:25px;
   display:none;
 }
 
-/* UPLOAD PREVIEW */
+/* UPLOAD AREA */
 
 .upload-area {
   text-align:center;
@@ -338,11 +307,15 @@ section {
   cursor:pointer;
 }
 
-#photoInput {
-  display:none;
+.file-input {display:none;}
+
+.upload-note {
+  margin-top:12px;
+  font-size:12px;
+  color:#b7c5b7;
 }
 
-/* ABOUT AND FOOTER */
+/* ABOUT */
 
 .about-footer {
   display:grid;
@@ -353,9 +326,7 @@ section {
   border-top:1px solid #75e00055;
 }
 
-.about-column {
-  min-width:0;
-}
+.about-column {min-width:0;}
 
 .about-column + .about-column {
   border-left:1px solid #75e00044;
@@ -385,10 +356,7 @@ section {
   background:#142a18;
 }
 
-.about-copy strong {
-  font-size:16px;
-  color:white;
-}
+.about-copy strong {font-size:16px;}
 
 .about-copy p {
   color:#c5d2c2;
@@ -397,11 +365,9 @@ section {
   margin-top:7px;
 }
 
-.about-copy .creator-name {
-  color:var(--light);
-}
+.creator-name {color:var(--light)!important;}
 
-/* SOCIAL MEDIA */
+/* SOCIAL */
 
 .social-row {
   display:flex;
@@ -420,25 +386,11 @@ section {
   font-size:23px;
   font-weight:bold;
   color:white;
-  transition:.3s;
 }
 
-.social-item:hover {
-  transform:translateY(-5px);
-}
-
-.youtube {
-  background:#e60018;
-}
-
-.tiktok {
-  background:#171717;
-  border:1px solid #777;
-}
-
-.facebook {
-  background:#1877f2;
-}
+.youtube {background:#e60018;}
+.tiktok {background:#171717;border:1px solid #777;}
+.facebook {background:#1877f2;}
 
 .social-note {
   font-family:Georgia,serif;
@@ -447,11 +399,9 @@ section {
   color:#dcebd8;
 }
 
-.social-note span {
-  color:var(--green);
-}
+.social-note span {color:var(--green);}
 
-/* BOTTOM FOOTER */
+/* FOOTER */
 
 .bottom-footer {
   background:#020704;
@@ -462,9 +412,7 @@ section {
   border-top:1px solid #ffffff12;
 }
 
-.bottom-footer strong {
-  color:var(--light);
-}
+.bottom-footer strong {color:var(--light);}
 
 /* LIGHTBOX */
 
@@ -479,9 +427,7 @@ section {
   padding:20px;
 }
 
-.lightbox.open {
-  display:flex;
-}
+.lightbox.open {display:flex;}
 
 .lightbox img {
   max-width:95%;
@@ -502,7 +448,7 @@ section {
   cursor:pointer;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 
 @media(max-width:800px) {
   .navbar {
@@ -517,17 +463,8 @@ section {
     flex-wrap:wrap;
   }
 
-  .category-grid {
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .gallery-grid {
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .about-footer {
-    grid-template-columns:1fr;
-  }
+  .gallery-grid {grid-template-columns:repeat(2,1fr);}
+  .about-footer {grid-template-columns:1fr;}
 
   .about-column + .about-column {
     border-left:0;
@@ -537,171 +474,100 @@ section {
 }
 
 @media(max-width:480px) {
-  .hero {
-    min-height:350px;
-    padding:45px 0;
-  }
+  .hero {min-height:350px;padding:45px 0;}
+  .hero h1 {font-size:48px;}
 
-  .hero h1 {
-    font-size:48px;
-  }
+  .nav-links {gap:10px;}
+  .nav-links a {font-size:11px;}
 
-  .nav-links {
-    gap:8px;
-  }
+  .part-grid {grid-template-columns:1fr;}
+  .part-card {min-height:180px;}
 
-  .nav-links a {
-    font-size:11px;
-  }
+  .gallery-grid {gap:10px;}
+  .photo-card img {height:145px;}
+  .photo-card h3 {font-size:13px;}
 
-  .category-grid,
-  .gallery-grid {
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-  }
+  .about-inner {align-items:flex-start;gap:12px;}
+  .profile-photo {width:90px;height:90px;}
 
-  .category {
-    height:125px;
-  }
-
-  .category h3 {
-    font-size:15px;
-    left:10px;
-    bottom:10px;
-  }
-
-  .photo-card img {
-    height:145px;
-  }
-
-  .photo-card h3 {
-    font-size:13px;
-  }
-
-  .about-inner {
-    align-items:flex-start;
-    gap:12px;
-  }
-
-  .profile-photo {
-    width:90px;
-    height:90px;
-  }
-
-  .section-title h2 {
-    font-size:28px;
-  }
+  .section-title h2 {font-size:28px;}
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-
 <header>
   <div class="container navbar">
-
-    <a href="#home" class="logo">
-      Green<span>Scape</span>
-    </a>
+    <a href="#home" class="logo">Green<span>Scape</span></a>
 
     <nav class="nav-links">
       <a href="#home">Home</a>
-      <a href="#categories">Categories</a>
-      <a href="#gallery">Gallery</a>
+      <a href="#world">World Nature</a>
+      <a href="#myphotos">My Photography</a>
       <a href="#about">About Me</a>
       <a href="#contact">Contact</a>
     </nav>
-
   </div>
 </header>
 
-<!-- HERO -->
-
 <main>
+
+<!-- HERO -->
 
 <section class="hero" id="home">
   <div class="container hero-content">
-
     <div class="hero-small">Welcome to</div>
-
     <h1>Green<span>Scape</span></h1>
-
     <p>Discover the Beauty of Nature</p>
-
     <p class="creator">
       A Nature Photography Gallery by
       <strong>Shahriar Ahsan Samy</strong>
     </p>
-
-    <a href="#gallery" class="hero-button">
-      Explore Gallery →
-    </a>
-
+    <a href="#world" class="hero-button">Explore Nature →</a>
   </div>
 </section>
 
-<!-- CATEGORIES -->
+<!-- TWO PARTS -->
 
-<section id="categories">
+<section>
   <div class="container">
-
     <div class="section-title">
-      <small>EXPLORE THE WORLD</small>
-      <h2>Nature Categories</h2>
-      <p>Discover the beauty of nature in every frame.</p>
+      <small>EXPLORE GREENSCAPE</small>
+      <h2>Two Worlds of Nature</h2>
+      <p>Explore nature from around the world and through my camera.</p>
     </div>
 
-    <div class="category-grid">
+    <div class="part-grid">
+      <a href="#world" class="part-card">
+        <div>
+          <h3>🌍 World Nature</h3>
+          <p>Beautiful nature photographs from around the world.</p>
+        </div>
+      </a>
 
-      <div class="category" data-category="Forest">
-        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=700&q=85" alt="Forest">
-        <h3>🌲 Forest</h3>
-      </div>
-
-      <div class="category" data-category="Mountains">
-        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=85" alt="Mountains">
-        <h3>🏔 Mountains</h3>
-      </div>
-
-      <div class="category" data-category="Rivers">
-        <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=700&q=85" alt="River">
-        <h3>🌊 Rivers</h3>
-      </div>
-
-      <div class="category" data-category="Flowers">
-        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=85" alt="Flowers">
-        <h3>🌸 Flowers</h3>
-      </div>
-
-      <div class="category" data-category="Animals">
-        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=700&q=85" alt="Animals">
-        <h3>🦊 Animals</h3>
-      </div>
-
-      <div class="category" data-category="Sunset">
-        <img src="https://images.unsplash.com/photo-1472120435266-53107fd0c44a?auto=format&fit=crop&w=700&q=85" alt="Sunset">
-        <h3>🌅 Sunset</h3>
-      </div>
-
+      <a href="#myphotos" class="part-card">
+        <div>
+          <h3>📸 My Photography</h3>
+          <p>Nature moments captured by my own camera.</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- GALLERY -->
+<!-- WORLD NATURE -->
 
-<section class="gallery-section" id="gallery">
+<section class="gallery-section" id="world">
   <div class="container">
 
     <div class="section-title">
-      <small>CAPTURED MOMENTS</small>
-      <h2>Our Gallery</h2>
-      <p>Beautiful moments from the natural world.</p>
+      <small>DISCOVER THE PLANET</small>
+      <h2>🌍 World Nature</h2>
+      <p>Nature photographs collected from around the world.</p>
     </div>
 
-    <div class="filter-buttons">
-
+    <div class="filter-buttons" id="worldFilters">
       <button class="active" data-filter="All">All</button>
       <button data-filter="Forest">Forest</button>
       <button data-filter="Mountains">Mountains</button>
@@ -709,58 +575,107 @@ section {
       <button data-filter="Flowers">Flowers</button>
       <button data-filter="Animals">Animals</button>
       <button data-filter="Sunset">Sunset</button>
-
     </div>
 
-    <div class="gallery-grid" id="galleryGrid">
+    <div class="gallery-grid" id="worldGrid">
 
       <div class="photo-card" data-category="Forest">
         <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=85" alt="Forest">
         <h3>Forest Beauty</h3>
-        <p>Forest</p>
+        <p>Forest · World Nature</p>
       </div>
 
       <div class="photo-card" data-category="Mountains">
         <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=85" alt="Mountains">
         <h3>Mountain View</h3>
-        <p>Mountains</p>
+        <p>Mountains · World Nature</p>
       </div>
 
       <div class="photo-card" data-category="Rivers">
-        <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=85" alt="River and waterfall">
+        <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=85" alt="River">
         <h3>Flowing Water</h3>
-        <p>Rivers</p>
+        <p>Rivers · World Nature</p>
       </div>
 
       <div class="photo-card" data-category="Flowers">
         <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=85" alt="Flowers">
         <h3>Flower Moments</h3>
-        <p>Flowers</p>
+        <p>Flowers · World Nature</p>
       </div>
 
       <div class="photo-card" data-category="Animals">
-        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=800&q=85" alt="Wildlife">
+        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=800&q=85" alt="Animal">
         <h3>Wildlife Beauty</h3>
-        <p>Animals</p>
+        <p>Animals · World Nature</p>
       </div>
 
       <div class="photo-card" data-category="Sunset">
         <img src="https://images.unsplash.com/photo-1472120435266-53107fd0c44a?auto=format&fit=crop&w=800&q=85" alt="Sunset">
         <h3>Golden Sunset</h3>
-        <p>Sunset</p>
+        <p>Sunset · World Nature</p>
       </div>
 
     </div>
 
-    <div class="upload-area">
-      <h3>📷 Preview Your Nature Photos</h3>
-      <p>Select photos from your phone to preview them in the gallery.</p>
+    <p class="empty-message" id="worldEmpty">No photos in this category yet.</p>
 
-      <label class="upload-button" for="photoInput">
-        + Choose Photos
+    <div class="upload-area">
+      <h3>🌍 Add World Nature Photos</h3>
+      <p>Download permitted photos and upload them to your GitHub repository inside images/world/.</p>
+      <p class="upload-note">Remember to include the photographer or source credit where required.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MY PHOTOGRAPHY -->
+
+<section id="myphotos">
+  <div class="container">
+
+    <div class="section-title">
+      <small>MY CAMERA · MY MOMENTS</small>
+      <h2>📸 My Photography</h2>
+      <p>My own photographs and beautiful moments captured by me.</p>
+    </div>
+
+    <div class="filter-buttons" id="myFilters">
+      <button class="active" data-filter="All">All</button>
+      <button data-filter="Forest">Forest</button>
+      <button data-filter="Mountains">Mountains</button>
+      <button data-filter="Rivers">Rivers</button>
+      <button data-filter="Flowers">Flowers</button>
+      <button data-filter="Animals">Animals</button>
+      <button data-filter="Sunset">Sunset</button>
+    </div>
+
+    <div class="gallery-grid" id="myGrid">
+      <!-- Your own uploaded GitHub photos will appear here. -->
+    </div>
+
+    <p class="empty-message" id="myEmpty" style="display:block;">
+      Your photography collection will appear here.
+    </p>
+
+    <div class="upload-area">
+      <h3>📷 Preview Your Own Photos</h3>
+      <p>Select photos from your phone to preview them here.</p>
+
+      <label for="myPhotoInput" class="upload-button">
+        + Choose My Photos
       </label>
 
-      <input type="file" id="photoInput" accept="image/*" multiple>
+      <input
+        class="file-input"
+        type="file"
+        id="myPhotoInput"
+        accept="image/*"
+        multiple
+      >
+
+      <p class="upload-note">
+        Preview is temporary. To publish photos permanently, upload them to GitHub.
+      </p>
     </div>
 
   </div>
@@ -768,16 +683,14 @@ section {
 
 </main>
 
-<!-- ABOUT ME AND SOCIAL MEDIA -->
+<!-- ABOUT ME -->
 
 <section class="about-footer" id="about">
 
   <div class="about-column">
-
     <h2 class="about-title">♟ About Me</h2>
 
     <div class="about-inner">
-
       <img
         class="profile-photo"
         src="images/my-photo.jpg"
@@ -785,7 +698,6 @@ section {
       >
 
       <div class="about-copy">
-
         <strong>Shahriar Ahsan Samy ♥</strong>
 
         <p>
@@ -795,164 +707,96 @@ section {
           ছোট্ট একটি প্রচেষ্টা থেকেই GreenScape-এর যাত্রা।
         </p>
 
-        <p class="creator-name">
-          — GreenScape-এর নির্মাতা
-        </p>
-
+        <p class="creator-name">— GreenScape-এর নির্মাতা</p>
       </div>
     </div>
-
   </div>
 
   <div class="about-column" id="contact">
-
     <h2 class="about-title">● Follow Me On</h2>
 
     <div class="social-row">
-
-      <a class="social-item youtube"
-         href="#"
-         aria-label="YouTube"
-         title="YouTube">▶</a>
-
-      <a class="social-item tiktok"
-         href="#"
-         aria-label="TikTok"
-         title="TikTok">♪</a>
-
-      <a class="social-item facebook"
-         href="#"
-         aria-label="Facebook"
-         title="Facebook">f</a>
-
+      <a class="social-item youtube" href="#" aria-label="YouTube">▶</a>
+      <a class="social-item tiktok" href="#" aria-label="TikTok">♪</a>
+      <a class="social-item facebook" href="#" aria-label="Facebook">f</a>
     </div>
 
     <p class="social-note">
-      Let's Explore Nature Together
-      <span>♥</span>
+      Let's Explore Nature Together <span>♥</span>
     </p>
-
   </div>
 
 </section>
 
-<!-- FOOTER -->
-
 <footer class="bottom-footer">
-
-  <p>
-    🍃 © 2026 GreenScape. All Rights Reserved.
-  </p>
-
-  <p>
-    Created with ♥ by
-    <strong>Shahriar Ahsan Samy</strong>
-  </p>
-
+  <p>🍃 © 2026 GreenScape. All Rights Reserved.</p>
+  <p>Created with ♥ by <strong>Shahriar Ahsan Samy</strong></p>
 </footer>
 
-<!-- IMAGE LIGHTBOX -->
+<!-- LIGHTBOX -->
 
 <div class="lightbox" id="lightbox">
   <button class="close-lightbox" id="closeLightbox">×</button>
   <img id="lightboxImage" src="" alt="Nature photograph">
 </div>
 
-<!-- JAVASCRIPT -->
-
 <script>
 
-// GALLERY FILTER
+// SEPARATE GALLERY FILTERS
 
-const filterButtons = document.querySelectorAll(".filter-buttons button");
-const photoCards = document.querySelectorAll(".photo-card");
-const categoryCards = document.querySelectorAll(".category");
+function setupFilters(filterAreaId, galleryId, emptyId) {
+  const buttons = document.querySelectorAll(
+    "#" + filterAreaId + " button"
+  );
 
-function filterGallery(category) {
+  const cards = document.querySelectorAll(
+    "#" + galleryId + " .photo-card"
+  );
 
-  photoCards.forEach(card => {
+  const empty = document.getElementById(emptyId);
 
-    if (
-      category === "All" ||
-      card.dataset.category === category
-    ) {
-      card.classList.remove("hide");
-    } else {
-      card.classList.add("hide");
+  function filter(category) {
+    let visible = 0;
+
+    cards.forEach(card => {
+      const show =
+        category === "All" ||
+        card.dataset.category === category;
+
+      card.classList.toggle("hide", !show);
+
+      if (show) visible++;
+    });
+
+    buttons.forEach(button => {
+      button.classList.toggle(
+        "active",
+        button.dataset.filter === category
+      );
+    });
+
+    if (empty) {
+      empty.style.display = visible === 0 ? "block" : "none";
     }
+  }
 
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      filter(button.dataset.filter);
+    });
   });
-
-  filterButtons.forEach(button => {
-    button.classList.toggle(
-      "active",
-      button.dataset.filter === category
-    );
-  });
-
 }
 
-filterButtons.forEach(button => {
+setupFilters("worldFilters", "worldGrid", "worldEmpty");
+setupFilters("myFilters", "myGrid", "myEmpty");
 
-  button.addEventListener("click", () => {
-    filterGallery(button.dataset.filter);
-  });
+// MY PHOTO TEMPORARY PREVIEW
 
-});
-
-// CATEGORY CLICK
-categoryCards.forEach(card => {
-  card.addEventListener("click", () => {
-    filterGallery(card.dataset.category);
-  });
-});;
-
-// LIGHTBOX
-
-const lightbox = document.getElementById("lightbox");
-const lightboxImage = document.getElementById("lightboxImage");
-
-document.getElementById("galleryGrid").addEventListener("click", event => {
-
-  if (event.target.tagName === "IMG") {
-
-    lightboxImage.src = event.target.src;
-    lightbox.classList.add("open");
-
-  }
-
-});
-
-function closeLightbox() {
-  lightbox.classList.remove("open");
-  lightboxImage.src = "";
-}
-
-document.getElementById("closeLightbox").addEventListener(
-  "click",
-  closeLightbox
-);
-
-lightbox.addEventListener("click", event => {
-  if (event.target === lightbox) {
-    closeLightbox();
-  }
-});
-
-document.addEventListener("keydown", event => {
-  if (event.key === "Escape") {
-    closeLightbox();
-  }
-});
-
-// LOCAL PHOTO PREVIEW
-
-document.getElementById("photoInput").addEventListener("change", event => {
-
+document.getElementById("myPhotoInput").addEventListener("change", event => {
   const files = Array.from(event.target.files);
+  const grid = document.getElementById("myGrid");
 
   files.forEach(file => {
-
     if (!file.type.startsWith("image/")) return;
 
     const imageURL = URL.createObjectURL(file);
@@ -969,20 +813,52 @@ document.getElementById("photoInput").addEventListener("change", event => {
     title.textContent = file.name;
 
     const label = document.createElement("p");
-    label.textContent = "Local Preview";
+    label.textContent = "My Photography · Local Preview";
 
     card.append(img, title, label);
-
-    document.getElementById("galleryGrid").prepend(card);
-
+    grid.prepend(card);
   });
 
-  filterGallery("All");
-  event.target.value = "";
+  document.getElementById("myEmpty").style.display =
+    grid.querySelectorAll(".photo-card").length ? "none" : "block";
 
+  event.target.value = "";
+});
+
+// LIGHTBOX FOR BOTH GALLERIES
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+
+document.body.addEventListener("click", event => {
+  if (
+    event.target.tagName === "IMG" &&
+    event.target.closest(".gallery-grid")
+  ) {
+    lightboxImage.src = event.target.src;
+    lightbox.classList.add("open");
+  }
+});
+
+function closeLightbox() {
+  lightbox.classList.remove("open");
+  lightboxImage.src = "";
+}
+
+document.getElementById("closeLightbox").addEventListener(
+  "click",
+  closeLightbox
+);
+
+lightbox.addEventListener("click", event => {
+  if (event.target === lightbox) closeLightbox();
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeLightbox();
 });
 
 </script>
 
 </body>
-  </html>
+</html>
