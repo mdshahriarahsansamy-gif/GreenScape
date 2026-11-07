@@ -528,10 +528,41 @@ section {
   }
 
   .section-title h2 {
-    font-size:28px;
+    font-size:28p
+
+ /* About Me Mobile Layout Fix */
+@media (max-width: 600px) {
+
+  .about-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 22px !important;
+    width: 100% !important;
   }
-}
-</style>
+
+  .profile-photo {
+    width: 160px !important;
+    height: 160px !important;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .about-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    text-align: center !important;
+    box-sizing: border-box;
+  }
+
+  .about-copy p {
+    width: 100% !important;
+    word-break: normal;
+    overflow-wrap: break-word;
+    line-height: 1.9;
+  }
+  } </style>
 </head>
 
 <body>
