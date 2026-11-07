@@ -415,14 +415,4 @@ html = r'''<!DOCTYPE html>
   </script>
 </body>
 </html>
-'''
-
-# Fix the intentional placeholder in the rivers category image URL with a valid Unsplash image ID.
-html = html.replace(
-    "https://images.unsplash.com/photo-143 calls?auto=format&fit=crop&w=600&q=85",
-    "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=600&q=85"
-)
-
-out = Path("/mnt/data/GreenScape_Premium_Reference_Design.html")
-out.write_text(html, encoding="utf-8")
-print(f"Created: {out} ({out.stat().st_size:,} bytes)")
+''
